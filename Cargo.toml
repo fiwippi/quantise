@@ -7,3 +7,10 @@ edition = "2024"
 anyhow = "1.0.97"
 clap = { version = "4.5.35", features = ["derive"] }
 image = "0.25.6"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "quantisation"
+harness = false
